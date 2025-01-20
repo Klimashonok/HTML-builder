@@ -8,7 +8,7 @@ const consoleExit = () => {stdout.write('Goodbye!\n');
     process.exit();
 };
 
-stdout.write('Write your text:\n');
+stdout.write('Hi, write your text:\n');
 stdin.on('data', (data) => {
   data.toString().trim() === 'exit' ? consoleExit() : writeStream.write(data);
 });
